@@ -1,0 +1,482 @@
+{
+  "user": [
+    {
+      "full_name": "Admin Duy",
+      "email": "adminduy@gmail.com",
+      "password": "123",
+      "role": "",
+      "address": "162/28 Bùi Thị Xuân ",
+      "phone_number": "123456789",
+      "created_at": "",
+      "avatar": "",
+      "isActive": true,
+      "id": 1,
+      "birth_day": ""
+    },
+    {
+      "full_name": "Admin Duy 2",
+      "email": "adminduy@gmail.com",
+      "password": "123",
+      "role": "ADMIN",
+      "address": "",
+      "phone_number": "",
+      "created_at": "",
+      "avatar": "",
+      "isActive": true,
+      "id": 2
+    },
+    {
+      "full_name": "Đào Đức Minh Khôi",
+      "created_at": "2021-11-19T10:04:02.135Z",
+      "phone_number": "09792151255",
+      "email": "daoducminhkhoi@gmail.com",
+      "address": "Cty 252 Cống Quỳnh, phường Phạm Ngũ Lão",
+      "birth_day": "",
+      "role": "4",
+      "avatar": {},
+      "isActive": true,
+      "id": 3,
+      "password": "123123123"
+    },
+    {
+      "full_name": "Phan Trọng Nghĩa",
+      "password": "123123",
+      "created_at": "2021-11-22T18:13:41.113Z",
+      "phone_number": "123987678",
+      "email": "blaugrana652002@gmail.com",
+      "address": "Hẻm 120 Trần Hưng Đạo, Hẻm 103/35 đến 102/59 Cống Quỳnh",
+      "birth_day": "Tue Nov 02 2021 00:00:00 GMT+0700 (Giờ Đông Dương)",
+      "role": "4",
+      "avatar": "",
+      "isActive": true,
+      "id": 4
+    }
+  ],
+  "shop": [
+    {
+      "name": "duy222",
+      "id_user": 1,
+      "created_at": "2021-11-16T14:53:06.842Z",
+      "id": 10,
+      "address": "58 Nguyễn Đình Chiểu Hà Nội"
+    },
+    {
+      "name": "duy",
+      "id_user": 1,
+      "created_at": "2021-11-16T15:03:34.730Z",
+      "id": 11,
+      "address": "28A - Phan Văn Trị, Quang Trung, Gò Vấp TPHCM"
+    },
+    {
+      "name": "duy",
+      "id_user": 1,
+      "created_at": "2021-11-16T15:04:36.139Z",
+      "id": 12,
+      "address": "114/18A Nguyễn Cư Trinh Hà Nội"
+    },
+    {
+      "name": "usum test",
+      "id_user": 2,
+      "created_at": "2021-11-16T15:04:54.022Z",
+      "id": 13,
+      "address": "168/29C Nguyễn Cư Trinh Hà Nội"
+    },
+    {
+      "name": "duy",
+      "id_user": 1,
+      "created_at": "2021-11-16T15:05:01.638Z",
+      "id": 14,
+      "address": "69/27 Nguyễn Cư Trinh Hà Nội"
+    },
+    {
+      "name": "duy",
+      "id_user": 1,
+      "created_at": "2021-11-16T15:34:20.570Z",
+      "id": 19,
+      "address": "Hẻm 245/59 đến 245/35 Nguyễn Trãi (Khu Mã lạng) Hà Nội"
+    }
+  ],
+  "rolePending": [
+    {
+      "id": 1,
+      "id_user": 1,
+      "required_role": 2
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Thời Trang Nam",
+      "is_show": "true",
+      "image": "https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn"
+    },
+    {
+      "name": "Điện Thoại & Phụ Kiện",
+      "is_show": "true",
+      "image": "https://cf.shopee.vn/file/31234a27876fb89cd522d7e3db1ba5ca_tn",
+      "id": 2
+    },
+    {
+      "name": "Thiết Bị Điện Tử",
+      "is_show": "true",
+      "image": "https://cf.shopee.vn/file/978b9e4cb61c611aaaf58664fae133c5_tn",
+      "id": 3
+    },
+    {
+      "name": "Máy Tính & Laptop",
+      "is_show": "true",
+      "image": "https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn",
+      "id": 4
+    },
+    {
+      "name": "Máy Ảnh & Máy Quay Phim",
+      "is_show": "true",
+      "image": "https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn",
+      "id": 5
+    },
+    {
+      "name": "Đồng Hồ",
+      "is_show": "true",
+      "image": "https://cf.shopee.vn/file/86c294aae72ca1db5f541790f7796260_tn",
+      "id": 6
+    },
+    {
+      "name": "Giày dép nam",
+      "is_show": true,
+      "image": "https://cf.shopee.vn/file/74ca517e1fa74dc4d974e5d03c3139de_tn",
+      "id": 7
+    }
+  ],
+  "product": [
+    {
+      "name": "Áo giữ nhiệt lót nỉ nam cổ 3p bảng 10 màu đẹp nhất ngành - toàn màu hot nam tính!",
+      "url": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "img": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "price": 98000,
+      "promotional_price": 49000,
+      "amount": 25,
+      "id_category": 1,
+      "id_shop": 10,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 1
+    },
+    {
+      "name": "Quần Thun lạnh thể thao 2 túi khóa kéo vải dày, mềm mịn co dãn 4 chiều có size Bự- QSTT012",
+      "url": "https://cf.shopee.vn/file/3a5f2f8b397ada6ba12953075973ecee_tn",
+      "img": "https://cf.shopee.vn/file/3a5f2f8b397ada6ba12953075973ecee_tn",
+      "price": 79000,
+      "promotional_price": 49000,
+      "amount": 12,
+      "id_category": 1,
+      "id_shop": 10,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": false,
+      "id": 2
+    },
+    {
+      "name": "Mũ lưỡi trai ❤️ Nón kết thêu chữ Memorie phong cách Ulzzang form unisex nam nữ N01",
+      "url": "https://cf.shopee.vn/file/d7ef4464338e3e5c59b05b622dd4f601_tn",
+      "img": "https://cf.shopee.vn/file/d7ef4464338e3e5c59b05b622dd4f601_tn",
+      "price": 58000,
+      "promotional_price": 45000,
+      "amount": 12,
+      "id_category": 1,
+      "id_shop": 11,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 3
+    },
+    {
+      "name": "Mũ lưỡi trai ❤️ Nón kết thêu chữ Memorie phong cách Ulzzang form unisex nam nữ N01",
+      "url": "https://cf.shopee.vn/file/d7ef4464338e3e5c59b05b622dd4f601_tn",
+      "img": "https://cf.shopee.vn/file/d7ef4464338e3e5c59b05b622dd4f601_tn",
+      "price": 58000,
+      "promotional_price": 45000,
+      "amount": 12,
+      "id_category": 1,
+      "id_shop": 11,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 3
+    },
+    {
+      "name": "Mũ lưỡi trai ❤️ Nón kết thêu chữ Memorie phong cách Ulzzang form unisex nam nữ N01",
+      "url": "https://cf.shopee.vn/file/d7ef4464338e3e5c59b05b622dd4f601_tn",
+      "img": "https://cf.shopee.vn/file/d7ef4464338e3e5c59b05b622dd4f601_tn",
+      "price": 58000,
+      "promotional_price": 45000,
+      "amount": 12,
+      "id_category": 1,
+      "id_shop": 11,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 3
+    },
+    {
+      "name": "Giá đỡ Laptop , Giá kê MacBook , Ultrabook chất liệu bằng nhôm điều chỉnh độ cao , chống mỏi cổ, dễ gấp gọn",
+      "url": "Giá-đỡ-Laptop-Giá-kê-MacBook-Ultrabook-chất-liệu-bằng-nhôm-điều-chỉnh-độ-cao-chống-mỏi-cổ-dễ-gấp-gọn-i.59638522.3838143193?sp_atk=af318cbb-01b0-427d-ac77-0b4f567a20a0",
+      "id_category": 3,
+      "is_show": false,
+      "price": "200000",
+      "promotional_price": "",
+      "amount": "3133",
+      "description": "<p><span style=\"color: rgba(0, 0, 0, 0.8);\">🔒🔒🔒 LƯU Ý: </span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">* Do ánh sáng khi chụp nên sản phẩm thực tế sẽ có đôi chút khác màu so với ảnh mình chụp , mong các bạn thông cảm ( sản phẩm thực tế màu sẽ sáng hơn nhiều</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">*Vì là phân khúc giá rẻ nên lúc gia công cơ khí sẽ không tránh khỏi sai số khi khoan lỗ chốt dẫn đến tình trạng sẽ có các chốt chặn, khớp nối bị lỏng, đôi khi gia công bị trầy xước nhưng shop cam kết hoàn toàn không ảnh hưởng đến trải nghiệm khi kê máy lên sử dụng - CAM KẾT KHÔNG BỊ BẬP BÊNH, RUNG LẮC KHI SỬ DỤNG.</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">- SẢN PHẨM ĐI KÈM TÚI ĐỰNG NHƯNG CHẤT LIỆU TÚI VÀ MÀU SẮC SẼ TÙY ĐỢT HÀNG NHÉ.</span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 Mẫu N3/K2 (***) : Lưu ý, đây là mẫu giá rẻ các shop khác đang bán ( vẻ ngoài giống mẫu N3 ver 1 bên mình ), chất lượng gia công không tốt như các sản phẩm khác hiện shop mình đang có, nhưng bù lại giá rất rẻ và đáp ứng được nhu cầu ở mức tối thiểu - trung bình. Dù sản phẩm gốc gia công có độ hoàn thiện không quá tốt nhưng shop sẽ cố găng gia công lại trước khi giao đến khách hàng để đảm bảm không bị kênh và vênh. </span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 Mẫu N3 ver 1 là mẫu đầu tiên : ( End of life)</span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 Mẫu Z3/N4 (***) : Đây là mẫu gia công lại từ mẫu N3 và được đặt tên lại là Z3 ( một số shop lấy tên N4). Chất lượng gia công tốt hơn N3, nhược điểm là hợp kim nhôm pha tạp =&gt; khá nặng , cả 2 màu đều sơn nhũ tĩnh điện ( thích hợp máy &lt; 14”)</span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 Mẫu N3 ver 2 là mẫu được nâng cấp sau này, kích thước có lớn hơn 1 chút, chất liệu nhôm và được sơn tĩnh điện nên không sáng bóng như đời đầu nhưng chất lượng gia công tốt hơn - thích hợp dùng cho các máy &lt;15.6\" ( máy không quá to)</span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 Mẫu D103 bạc : Chất liệu nhôm, anode sáng bóng như N3 ver 1 - thích hợp dùng cho các máy &lt;15.6\" ( máy không quá to - gia công không tốt)</span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉Mẫu D103 Ver 2 - Bạc : Chất liệu nhôm anode sáng bóng, nâng cấp hơn so với D103, gia công tốt hơn ( nhưng vẫn chưa quá tốt ), diện tích phủ đệm silicone nhiều hơn - thích hợp dùng cho các máy &lt;15.6\" ( máy không quá to) </span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 Mẫu P2 cố định : Chất liệu nhôm , anode sáng bóng ( cả 2 màu bạc và xám đều anode). - thích hợp dùng cho mọi loại máy, kể cả máy 17.3\" - điểm trừ duy nhất là không xếp gọn được nhưng vì vậy kê bao chắc chắn.</span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 Mẫu L200 cố định: Chất liệu nhôm , sơn tĩnh điện - thích hợp dùng cho mọi loại máy, kể cả máy 17.3\" - điểm trừ duy nhất là không xếp gọn được nhưng vì vậy kê bao chắc chắn.</span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 Mẫu PL1 / PL1 Ver 2 (Phiên bản nâng cấp của PL1, bổ sung full đệm silicone chống trượt): vật liệu kim loại, một số chi tiết bằng nhựa và nhôm, nước sơn nhũ không sáng bóng - thích hợp dùng cho các máy &lt;15.6\"</span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 Mẫu LS501 / LS501 Ver 2 : Phiên bản kết hợp giữa N3 và D103 - Chất liệu bằng nhôm được sơn tĩnh điện, chất lượng tốt, có khả năng dùng được laptop cỡ lớn 15.6\" </span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">☀☀☀☀</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉👉👉Mẫu N3 - Cao cấp: Đúng như tên gọi, bản nhôm anode sáng bóng cao cấp, bản nhôm dày 5mm cực kì chắc chắn, sử dụng tốt nhất cho máy &lt;15.6\" không quá to.</span></p><p><br></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">👉 👉👉Mẫu C4 - Cao cấp : Phiên bản cao cấp shop nhập về hạn chế vì hàng săn sales - số lượng hạn chế, chất liệu nhôm - anode sáng bóng, bản nhôm dày 5mm - phù hợp máy 15.6 - 17.3 ( gaming laptop)</span></p>",
+      "created_at": "2021-11-22T06:26:55.638Z",
+      "id_shop": 10,
+      "id": 4
+    },
+    {
+      "name": "Áo Lót Nam Cotton Có Tay Mặc Ở Nhà , Áo Đông Xuân Nam Cộc Tay Bộ Đội Trắng Siêu Rẻ Siêu Đẹp",
+      "url": "Áo-Lót-Nam-Cotton-Có-Tay-Mặc-Ở-Nhà-Áo-Đông-Xuân-Nam-Cộc-Tay-Bộ-Đội-Trắng-Siêu-Rẻ-Siêu-Đẹp-i.167710204.2764925996?sp_atk=b288c024-42b1-4601-a102-b38ee8edf540",
+      "id_category": 1,
+      "is_show": true,
+      "price": "28000",
+      "promotional_price": "27500",
+      "amount": "37203",
+      "description": "<p><span style=\"color: rgba(0, 0, 0, 0.8);\">Áo Lót Nam Cotton Có Tay Mặc Ở Nhà , Áo Đông Xuân Nam Cộc Tay Bộ Đội Trắng Siêu Rẻ Siêu Đẹp </span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">Chất liệu cotton ( vải bông) đem đến sự mềm mại, thoáng khí, thấm hút mổ hôi phải chăng, giúp bạn lúc mặc sẽ luôn cảm thấy thỏa mái và tự tin.</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">- Co giãn rẻ, không gây vết lằn trên da, ko gây gổ khó chịu khi mặc.</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">- Áo được thiết kế đơn thuần, dễ mặc cho nam giới phong cách năng động và khỏe khoắn hơn.</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">- Sản phẩm được cung cấp tại việt nam, an toàn và ko gây hại tới sức khỏe</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">Áo Lót Nam Cotton Có Tay Mặc Ở Nhà có 5 size với thông số</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">+Size S: 50-62kg</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">+Size M: 55 -65kg</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">+Size L: 65-75kg</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">+Size XL: 70-80kg</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">+Size XXL: 75-85kg</span></p><p><span style=\"color: rgba(0, 0, 0, 0.8);\">#aolotnam #aolot #aonot #aothun #aothunin #aothuntrang #aothunhanquoc #aothuncotron #aothunnam #aothunnamdep #aothundongphuc#aothuntron #aothundep</span></p>",
+      "created_at": "2021-11-22T12:28:16.225Z",
+      "id_shop": 10,
+      "isHot": false,
+      "buy_amount": 0,
+      "view_amount": 0,
+      "id": 5
+    },
+    {
+      "name": "Áo giữ nhiệt lót nỉ nam cổ 3p bảng 10 màu đẹp nhất ngành - toàn màu hot nam tính!",
+      "url": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "img": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "price": 98000,
+      "promotional_price": 49000,
+      "amount": 25,
+      "id_category": 1,
+      "id_shop": 10,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 6
+    },
+    {
+      "name": "Áo giữ nhiệt lót nỉ nam cổ 3p bảng 10 màu đẹp nhất ngành - toàn màu hot nam tính!",
+      "url": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "img": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "price": 98000,
+      "promotional_price": 49000,
+      "amount": 25,
+      "id_category": 1,
+      "id_shop": 10,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 7
+    },
+    {
+      "name": "Áo giữ nhiệt lót nỉ nam cổ 3p bảng 10 màu đẹp nhất ngành - toàn màu hot nam tính!",
+      "url": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "img": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "price": 98000,
+      "promotional_price": 49000,
+      "amount": 25,
+      "id_category": 1,
+      "id_shop": 10,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 8
+    },
+    {
+      "name": "Áo giữ nhiệt lót nỉ nam cổ 3p bảng 10 màu đẹp nhất ngành - toàn màu hot nam tính!",
+      "url": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "img": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "price": 98000,
+      "promotional_price": 49000,
+      "amount": 25,
+      "id_category": 1,
+      "id_shop": 10,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 9
+    },
+    {
+      "name": "Áo giữ nhiệt lót nỉ nam cổ 3p bảng 10 màu đẹp nhất ngành - toàn màu hot nam tính!",
+      "url": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "img": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "price": 98000,
+      "promotional_price": 49000,
+      "amount": 25,
+      "id_category": 1,
+      "id_shop": 10,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 10
+    },
+    {
+      "name": "Áo giữ nhiệt lót nỉ nam cổ 3p bảng 10 màu đẹp nhất ngành - toàn màu hot nam tính!",
+      "url": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "img": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "price": 98000,
+      "promotional_price": 49000,
+      "amount": 25,
+      "id_category": 1,
+      "id_shop": 10,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 11
+    },
+    {
+      "name": "Áo giữ nhiệt lót nỉ nam cổ 3p bảng 10 màu đẹp nhất ngành - toàn màu hot nam tính!",
+      "url": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "img": "https://cf.shopee.vn/file/2df142298b8762051efcf635c368d99d_tn",
+      "price": 98000,
+      "promotional_price": 49000,
+      "amount": "26",
+      "id_category": 1,
+      "id_shop": 10,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "description": "",
+      "view_amount": 0,
+      "buy_amount": 0,
+      "properties": 0,
+      "is_show": true,
+      "isHot": true,
+      "id": 12
+    }
+  ],
+  "order": [
+    {
+      "id": 1,
+      "delivery_address": "10 Hùng Vương, Hà Nội",
+      "delivery_status": 0,
+      "total_money": 120000,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "completed_at": "2021-11-18T15:03:34.730Z",
+      "payment_status": 0,
+      "id_deliver": null,
+      "id_client": 2,
+      "id_shop": 10
+    },
+    {
+      "id": 2,
+      "delivery_address": "Bông Sao, Phường 5 Quận 8 TPHCM",
+      "delivery_status": 1,
+      "total_money": 120000,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "completed_at": "2021-11-18T15:03:34.730Z",
+      "payment_status": 1,
+      "id_deliver": null,
+      "id_client": 3,
+      "id_shop": 10
+    },
+    {
+      "id": 3,
+      "delivery_address": "Lý Thường Kiệt, Quận 12",
+      "delivery_status": 2,
+      "total_money": 130000,
+      "create_at": "2021-11-16T15:03:21.730Z",
+      "completed_at": "2021-11-18T15:03:34.730Z",
+      "payment_status": 0,
+      "id_deliver": null,
+      "id_client": 4,
+      "id_shop": 10
+    },
+    {
+      "id": 4,
+      "delivery_address": "Lý Thường Kiệt, Quận 12",
+      "delivery_status": 0,
+      "total_money": 120000,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "completed_at": "2021-11-18T15:45:34.730Z",
+      "payment_status": 0,
+      "id_deliver": null,
+      "id_client": 4,
+      "id_shop": 12
+    },
+    {
+      "id": 5,
+      "delivery_address": "số 4 đến số 36 Đường 902 Tạ Quang Bửu và số 85/124A đến 58/122/14 Bùi Minh Trực ",
+      "delivery_status": 4,
+      "total_money": 58000,
+      "create_at": "2021-11-16T15:03:34.730Z",
+      "completed_at": "2021-11-18T15:45:34.730Z",
+      "payment_status": 0,
+      "id_deliver": null,
+      "id_client": 4,
+      "id_shop": 10
+    }
+  ],
+  "order-detail": [
+    {
+      "id": 1,
+      "price": 50000,
+      "quanity": 1,
+      "id_product": 1,
+      "id_order": 1
+    },
+    {
+      "id": 2,
+      "price": 70000,
+      "quanity": 1,
+      "id_product": 2,
+      "id_order": 1
+    },
+    {
+      "id": 3,
+      "price": 70000,
+      "quanity": 1,
+      "id_product": 2,
+      "id_order": 2
+    }
+  ]
+}
