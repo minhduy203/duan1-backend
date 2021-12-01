@@ -53,6 +53,10 @@ export class ProductService {
     });
   }
 
+  async deleteProduct(_id: string): Promise<Product> {
+    return this.productRepository.delete({ _id });
+  }
+
   async updateProduct(
     _id: string,
     productUpdates: UpdateProductDto,

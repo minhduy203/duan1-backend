@@ -23,6 +23,10 @@ export class ProductRepository {
     return newProduct.save();
   }
 
+  async delete(productFilterQuery: FilterQuery<Product>): Promise<Product> {
+    return this.productModel.deleteOne(productFilterQuery);
+  }
+
   async findOneAndUpdate(
     productFilterQuery: FilterQuery<Product>,
     product: Partial<Product>,

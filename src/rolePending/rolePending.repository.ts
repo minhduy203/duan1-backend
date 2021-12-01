@@ -28,6 +28,12 @@ export class RolePendingRepository {
     return newRole.save();
   }
 
+  async deleteOne(
+    rolePendingFilterQuery: FilterQuery<RolePending>,
+  ): Promise<RolePending> {
+    return this.rolePendingModel.deleteOne(rolePendingFilterQuery);
+  }
+
   async findOneAndUpdate(
     rolePendingFilterQuery: FilterQuery<RolePending>,
     rolePending: Partial<RolePending>,

@@ -27,6 +27,10 @@ export class RolePendingService {
     });
   }
 
+  async deleteRolePending(_id: string): Promise<RolePending> {
+    return this.rolePendingRepository.deleteOne({ _id });
+  }
+
   async updateRolePending(
     _id: string,
     rolePendingUpdates: UpdateRolePendingDto,

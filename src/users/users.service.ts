@@ -43,6 +43,10 @@ export class UsersService {
     });
   }
 
+  async deleteUser(_id: string): Promise<User> {
+    return this.usersRepository.delete({ _id });
+  }
+
   async updateUser(_id: string, userUpdates: UpdateUserDto): Promise<User> {
     return this.usersRepository.findOneAndUpdate({ _id }, userUpdates);
   }

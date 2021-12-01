@@ -23,6 +23,10 @@ export class CategoryRepository {
     return newCategory.save();
   }
 
+  async delete(categoryFilterQuery: FilterQuery<Category>): Promise<Category> {
+    return this.categoryModel.deleteOne(categoryFilterQuery);
+  }
+
   async findOneAndUpdate(
     categoryFilterQuery: FilterQuery<Category>,
     category: Partial<Category>,

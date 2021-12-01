@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
 import { CreateRolePendingDto } from './dto/create-rolePending.dto';
 import { UpdateRolePendingDto } from './dto/update-rolePending.dto';
 
@@ -27,6 +27,11 @@ export class RolePendingController {
       createRolePendingDto.id_user,
       createRolePendingDto.required_role,
     );
+  }
+
+  @Delete(':id')
+  async deleteRolePending(@Param('id') _id: string): Promise<RolePending> {
+    return this.rolePendingService.deleteRolePending(_id);
   }
 
   @Patch(':_id')
