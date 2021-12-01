@@ -36,7 +36,7 @@ export class UsersService {
       role,
       address,
       phone_number,
-      created_at,
+      created_at: new Date(),
       avatar,
       isActive,
       birth_date
