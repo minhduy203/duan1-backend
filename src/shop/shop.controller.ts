@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
 import { CreateShopDto } from './dto/create-shop.dto';
 import { UpdateShopDto } from './dto/update-shop.dto';
 
@@ -27,6 +27,11 @@ export class ShopController {
       createShopDto.address,
       createShopDto.created_at,
     );
+  }
+
+  @Delete(':_id')
+  async deleteUser(@Param('_id') _id: string): Promise<Shop> {
+    return this.shopService.deleteShop(_id);
   }
 
   @Patch(':_id')

@@ -21,6 +21,10 @@ export class UsersRepository {
         return newUser.save()
     }
 
+    async delete(userFilterQuery: FilterQuery<User>): Promise<User> {
+        return this.userModel.deleteOne(userFilterQuery);
+    }
+
     async findOneAndUpdate(userFilterQuery: FilterQuery<User>, user: Partial<User>): Promise<User> {
         return this.userModel.findOneAndUpdate(userFilterQuery, user, { new: true, useFindAndModify: false });
     }

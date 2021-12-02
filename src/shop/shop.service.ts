@@ -31,6 +31,10 @@ export class ShopService {
     });
   }
 
+  async deleteShop(_id: string): Promise<Shop> {
+    return this.shopRepository.delete({ _id });
+  }
+
   async updateShop(_id: string, shopUpdates: UpdateShopDto): Promise<Shop> {
     return this.shopRepository.findOneAndUpdate({ _id }, shopUpdates);
   }

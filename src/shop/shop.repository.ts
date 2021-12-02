@@ -21,6 +21,10 @@ export class ShopRepository {
     return newShop.save();
   }
 
+  async delete(shopFilterQuery: FilterQuery<Shop>): Promise<Shop> {
+    return this.shopModel.deleteOne(shopFilterQuery);
+  }
+
   async findOneAndUpdate(
     shopFilterQuery: FilterQuery<Shop>,
     shop: Partial<Shop>,

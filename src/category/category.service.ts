@@ -29,6 +29,10 @@ export class CategoryService {
     });
   }
 
+  async deleteCategory(_id: string): Promise<Category> {
+    return this.categoryRepository.delete({ _id });
+  }
+
   async updateCategory(
     _id: string,
     categoryUpdates: UpdateCategoryDto,

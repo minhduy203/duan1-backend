@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
 
@@ -28,6 +28,11 @@ export class CategoryController {
       createCategoryDto.is_show,
       createCategoryDto.image,
     );
+  }
+
+  @Delete(':_id')
+  async deleteCategory(@Param('_id') _id: string): Promise<Category> {
+    return this.categoryService.deleteCategory(_id);
   }
 
   @Patch(':_id')

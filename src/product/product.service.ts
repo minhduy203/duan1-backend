@@ -17,6 +17,10 @@ export class ProductService {
     return this.productRepository.find({});
   }
 
+  async getProductByIdCategory(_id: string): Promise<Product[]> {
+    return this.productRepository.findProductByIdCategory({ id_category: _id });
+  }
+
   async createProduct(
     name: string,
     url: string,
@@ -51,6 +55,10 @@ export class ProductService {
       is_show,
       isHot,
     });
+  }
+
+  async deleteProduct(_id: string): Promise<Product> {
+    return this.productRepository.delete({ _id });
   }
 
   async updateProduct(
