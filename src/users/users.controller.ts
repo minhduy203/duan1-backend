@@ -1,6 +1,7 @@
 import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { LoginUserDto } from './dto/login-user.dto';
 
 import { User } from './schemas/user.schema';
 import { UsersService } from './users.service';
@@ -41,5 +42,14 @@ export class UsersController {
     @Body() updateUserDto: UpdateUserDto,
   ): Promise<User> {
     return this.usersService.updateUser(userId, updateUserDto);
+  }
+
+  @Post('/login')
+  async login(@Body() loginUserDto: LoginUserDto): Promise<User> {
+    return this.usersService.login(loginUserDto);
+  }
+  @Post('/register')
+  async register(@Body() loginUserDto: LoginUserDto): Promise<User> {
+    return this.usersService.register(loginUserDto);
   }
 }
