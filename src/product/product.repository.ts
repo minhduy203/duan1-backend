@@ -18,6 +18,10 @@ export class ProductRepository {
     return this.productModel.find(productFilterQuery);
   }
 
+  async findProductByIdCategory(productFilterQuery: FilterQuery<Product>): Promise<Product[]> {
+    return this.productModel.find(productFilterQuery);
+  }
+
   async create(product: Product): Promise<Product> {
     const newProduct = new this.productModel(product);
     return newProduct.save();

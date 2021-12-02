@@ -17,6 +17,10 @@ export class ProductService {
     return this.productRepository.find({});
   }
 
+  async getProductByIdCategory(_id: string): Promise<Product[]> {
+    return this.productRepository.findProductByIdCategory({ id_category: _id });
+  }
+
   async createProduct(
     name: string,
     url: string,
