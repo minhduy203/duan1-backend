@@ -14,6 +14,11 @@ export class ShopController {
     return this.shopService.getShopById(_id);
   }
 
+  @Get('/u/:_id')
+  async getShopByIdUser(@Param('_id') _id: string): Promise<Shop[]> {
+    return this.shopService.getShopByIdUser(_id);
+  }
+
   @Get()
   async getShops(): Promise<Shop[]> {
     return this.shopService.getShops();

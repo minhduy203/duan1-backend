@@ -18,6 +18,20 @@ export class OrderRepository {
     return this.orderModel.find(orderFilterQuery);
   }
 
+  async findOrderByIdShop(orderFilterQuery: FilterQuery<Order>): Promise<Order[]> {
+    return this.orderModel.find(orderFilterQuery);
+  }
+
+  async findDeliveryStatus(orderFilterQuery: FilterQuery<Order>): Promise<Order[]> {
+    return this.orderModel.find(orderFilterQuery);
+  }
+
+  async findOrderByIdShopAndDeliveryStatus(orderFilterQuery: FilterQuery<Order>): Promise<Order[]> {
+    console.log(orderFilterQuery);
+    return this.orderModel.find(orderFilterQuery);
+  }
+
+
   async create(order: Order): Promise<Order> {
     const newOrder = new this.orderModel(order);
     return newOrder.save();

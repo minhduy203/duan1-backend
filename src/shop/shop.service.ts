@@ -17,6 +17,10 @@ export class ShopService {
     return this.shopRepository.find({});
   }
 
+  async getShopByIdUser(_id: string): Promise<Shop[]> {
+    return this.shopRepository.findShopByIdUser({ id_user: _id });
+  }
+
   async createShop(
     name: string,
     id_user: string,

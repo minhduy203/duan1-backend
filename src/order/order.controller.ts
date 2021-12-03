@@ -19,6 +19,22 @@ export class OrderController {
     return this.orderService.getOrders();
   }
 
+  @Get('/s/:_id')
+  async getOrderByIdDeliveryStatus(@Param('_id') _id: number): Promise<Order[]> {
+    return this.orderService.getOrderByIdDeliveryStatus(_id);
+  }
+
+  @Get('/shop/:id_shop')
+  async getOrderByIdShop(@Param('id_shop') id_shop: string): Promise<Order[]> {
+    return this.orderService.getOrderByIdShop(id_shop);
+  }
+
+  @Get('/i/:id_shop/s/:delivery_status')
+  async getIdShopAndDeliveryStatus(@Param('id_shop') id_shop: string,@Param('delivery_status') delivery_status: number): Promise<Order[]> {
+    return this.orderService.getOrderByIdShopAndDeliveryStatus(id_shop, delivery_status);
+  }
+
+
   @Post()
   async createOrder(@Body() createOrderDto: CreateOrderDto): Promise<Order> {
     return this.orderService.createOrder(

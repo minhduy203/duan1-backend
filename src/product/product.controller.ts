@@ -24,6 +24,11 @@ export class ProductController {
     return this.productService.getProductByIdCategory(_id);
   }
 
+  @Get('shop/:_id')
+  async getProductByIdShop(@Param('_id') _id: string): Promise<Product[]> {
+    return this.productService.getProductByIdShop(_id);
+  }
+
   @Post()
   async createProduct(
     @Body() createProductDto: CreateProductDto,

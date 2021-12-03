@@ -17,6 +17,18 @@ export class OrderService {
     return this.orderRepository.find({});
   }
 
+  async getOrderByIdShop(id_shop: string): Promise<Order[]> {
+    return this.orderRepository.findOrderByIdShop({ id_shop: id_shop });
+  }
+
+  async getOrderByIdDeliveryStatus(_id: number): Promise<Order[]> {
+    return this.orderRepository.findDeliveryStatus({ delivery_status: _id });
+  }
+
+  async getOrderByIdShopAndDeliveryStatus(id_shop: string, deliver_status: number): Promise<Order[]> {
+    return this.orderRepository.findOrderByIdShopAndDeliveryStatus({ id_shop: id_shop, delivery_status: deliver_status});
+  }
+
   async createOrder(
     delivery_address: string,
     delivery_status: number,

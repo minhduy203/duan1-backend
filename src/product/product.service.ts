@@ -21,6 +21,10 @@ export class ProductService {
     return this.productRepository.findProductByIdCategory({ id_category: _id });
   }
 
+  async getProductByIdShop(_id: string): Promise<Product[]> {
+    return this.productRepository.findProductByIdShop({ id_shop: _id });
+  }
+
   async createProduct(
     name: string,
     url: string,

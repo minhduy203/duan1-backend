@@ -16,6 +16,10 @@ export class ShopRepository {
     return this.shopModel.find(shopFilterQuery);
   }
 
+  async findShopByIdUser(shopFilterQuery: FilterQuery<Shop>): Promise<Shop[]> {
+    return this.shopModel.find(shopFilterQuery);
+  }
+
   async create(shop: Shop): Promise<Shop> {
     const newShop = new this.shopModel(shop);
     return newShop.save();
