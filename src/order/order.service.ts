@@ -29,6 +29,10 @@ export class OrderService {
     return this.orderRepository.findOrderByIdShopAndDeliveryStatus({ id_shop: id_shop, delivery_status: deliver_status});
   }
 
+  async getOrderByIdDeliveryAndDeliveryStatus(id_deliver: string, deliver_status: number): Promise<Order[]> {
+    return this.orderRepository.getOrderByIdDeliveryAndDeliveryStatus({ id_deliver: id_deliver, delivery_status: deliver_status});
+  }
+
   async createOrder(
     delivery_address: string,
     delivery_status: number,

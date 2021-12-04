@@ -27,10 +27,13 @@ export class OrderRepository {
   }
 
   async findOrderByIdShopAndDeliveryStatus(orderFilterQuery: FilterQuery<Order>): Promise<Order[]> {
-    console.log(orderFilterQuery);
     return this.orderModel.find(orderFilterQuery);
   }
 
+  async getOrderByIdDeliveryAndDeliveryStatus(orderFilterQuery: FilterQuery<Order>): Promise<Order[]> {
+    console.log(orderFilterQuery);
+    return this.orderModel.find(orderFilterQuery);
+  }
 
   async create(order: Order): Promise<Order> {
     const newOrder = new this.orderModel(order);
