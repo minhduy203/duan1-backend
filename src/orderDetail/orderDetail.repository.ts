@@ -19,8 +19,8 @@ export class OrderDetailRepository {
 
   async findOrderDetailByIdOrder(
     orderDetailFilterQuery: FilterQuery<OrderDetail>,
-  ): Promise<OrderDetail> {
-    return this.orderDetailModel.findOne(orderDetailFilterQuery);
+  ): Promise<OrderDetail[]> {
+    return this.orderDetailModel.find(orderDetailFilterQuery);
   }
 
   async find(
