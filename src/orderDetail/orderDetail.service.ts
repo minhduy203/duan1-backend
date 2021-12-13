@@ -13,6 +13,10 @@ export class OrderDetailService {
     return this.orderDetailRepository.findOne({ _id });
   }
 
+  async getOrderDetailByOrderId(_id: string): Promise<OrderDetail[]> {
+    return this.orderDetailRepository.find({ id_order: _id });
+  }
+
   async getOrderDetails(): Promise<OrderDetail[]> {
     return this.orderDetailRepository.find({});
   }

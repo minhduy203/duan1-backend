@@ -14,6 +14,11 @@ export class OrderDetailController {
     return this.orderDetailService.getOrderDetailById(_id);
   }
 
+  @Get('/idOrder/:_id')
+  async getOrderDetailByOrderId(@Param('_id') _id: string): Promise<OrderDetail[]> {
+    return this.orderDetailService.getOrderDetailByOrderId(_id);
+  }
+
   @Get()
   async getOrders(): Promise<OrderDetail[]> {
     return this.orderDetailService.getOrderDetails();

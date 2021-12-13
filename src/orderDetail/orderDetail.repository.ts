@@ -17,6 +17,12 @@ export class OrderDetailRepository {
     return this.orderDetailModel.findOne(orderDetailFilterQuery);
   }
 
+  async findOrderDetailByIdOrder(
+    orderDetailFilterQuery: FilterQuery<OrderDetail>,
+  ): Promise<OrderDetail> {
+    return this.orderDetailModel.findOne(orderDetailFilterQuery);
+  }
+
   async find(
     orderDetailFilterQuery: FilterQuery<OrderDetail>,
   ): Promise<OrderDetail[]> {

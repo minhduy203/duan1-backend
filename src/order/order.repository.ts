@@ -31,7 +31,6 @@ export class OrderRepository {
   }
 
   async getOrderByIdDeliveryAndDeliveryStatus(orderFilterQuery: FilterQuery<Order>): Promise<Order[]> {
-    console.log(orderFilterQuery);
     return this.orderModel.find(orderFilterQuery);
   }
 
